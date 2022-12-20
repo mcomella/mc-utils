@@ -2,7 +2,7 @@
 This macOS window manager responds to hard-coded keyboard shortcuts to resize the focused window into thirds, halves, & two-thirds on either the left or the right of the screen and to resize it to fullscreen.
 
 ## Building
-To build a debug build, open with Xcode and build.
+To build a debug build, open with Xcode and build. Each time you build, you'll have to re-add it as an accessibility app: you may be able to work around this with https://stackoverflow.com/a/72312500/2219998.
 
 To build a release build, cd into the directory of this README file and run:
 ```
