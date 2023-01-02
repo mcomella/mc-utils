@@ -1,4 +1,7 @@
+import OSLog
 import SwiftUI
+
+let log = Logger(subsystem: "xyz.mcomella.mwm", category: "default")
 
 @main
 struct mwmApp: App {
@@ -17,7 +20,7 @@ struct mwmApp: App {
 
 fileprivate func alertAndExitIfAccessibilityIsDisabled() {
     if !AXIsProcessTrusted() {
-        print("error: mwm must be trusted by accessibility. Will display alert and exit.")
+        log.error("mwm must be trusted by accessibility. Will display alert and exit.")
 
         // This is mixing UI paradigms: SwiftUI and the legacy stuff. However, it's simple so we use it.
         let alert = NSAlert()

@@ -5,7 +5,7 @@ fileprivate var lastKeyCommitted: CommittedKey? = nil
 fileprivate typealias CommittedKey = (key: RecognizedKey, date: Date)
 
 /// The positions we can move windows into.
-fileprivate enum WindowPosition {
+fileprivate enum WindowPosition : String {
     case leftThird, leftHalf, leftTwoThirds
     case rightThird, rightHalf, rightTwoThirds
     case fullscreen
@@ -55,9 +55,13 @@ class Input {
 
 fileprivate func onKeyEvent(_ proxy: CGEventTapProxy, _ type: CGEventType, _ event: CGEvent, _ refcon: Optional<UnsafeMutableRawPointer>) -> Unmanaged<CGEvent>? {
     func moveWindow(to windowPosition: WindowPosition) {
-        print("move window? \(windowPosition)")
+        let logPrefix = "move window \(windowPosition.rawValue): "
+        func logMoveWindowError(_ base: String) {
+            log.error("\(logPrefix, privacy: .public)\(base, privacy: .public)")
+        }
+
         guard let frontmostAppPid = NSWorkspace.shared.frontmostApplication?.processIdentifier else {
-            print("error: unable to fetch frontmost app pid")
+            logMoveWindowError("unable to fetch frontmost app pid")
             return
         }
 
@@ -67,7 +71,7 @@ fileprivate func onKeyEvent(_ proxy: CGEventTapProxy, _ type: CGEventType, _ eve
         let axApp = AXUIElementCreateApplication(frontmostAppPid)
         let (focusedWindowObj, err) = axApp.copyAttributeValue(kAXFocusedWindowAttribute)
         if err != AXError.success {
-            print("error: unable to get focused window of frontmost application")
+            logMoveWindowError("unable to get focused window of frontmost application")
             return
         }
 
@@ -77,7 +81,7 @@ fileprivate func onKeyEvent(_ proxy: CGEventTapProxy, _ type: CGEventType, _ eve
         // This won't work correctly for macs with cameras in the bezels:
         // see auxiliaryTopLeftArea to address.
         guard let screenSize = NSScreen.main?.visibleFrame.size else {
-            print("error: unable to get the screen size")
+            logMoveWindowError("unable to get the screen size")
             return
         }
 
@@ -109,19 +113,21 @@ fileprivate func onKeyEvent(_ proxy: CGEventTapProxy, _ type: CGEventType, _ eve
         let sizeResult = focusedWindow.setSize(size)
 
         if positionResult != AXError.success {
-            print("error: set position failed \(positionResult)")
+            logMoveWindowError("set position failed \(positionResult.rawValue)")
         }
         if sizeResult != AXError.success {
-            print("error: set size failed \(sizeResult)")
+            logMoveWindowError("set size failed \(sizeResult.rawValue)")
         }
 
         if positionResult == AXError.success &&
             sizeResult == AXError.success {
-            print("move window: success")
+            log.notice("\(logPrefix, privacy: .public)success")
         }
     }
 
     if type == .tapDisabledByUserInput || type == .tapDisabledByTimeout {
+        // TODO: figure out if redundant log is necessary.
+        log.fault("event tap disabled \(type.rawValue): window manager unable to function")
         fatalError("event tap disabled \(type): window manager unable to function")
     }
 
