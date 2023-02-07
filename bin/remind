@@ -1,6 +1,0 @@
-# remind <phrase> <min min> <max min>: repeat a phrase at some random interval.
-while true; do
-    DURATION=$(python3 -c "import random; print(random.randint($2, $3))")
-    sleep $(($DURATION * 60))
-    say $1
-done
