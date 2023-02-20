@@ -1,13 +1,14 @@
 # mcomella utils (mc-utils)
-My day-to-day utilities collected in a single repo for easier clone-build-use. These utilities are intended for my personal use and aren't built with others in mind.
+My day-to-day utilities collected in a single repo for easier clone-build-use. These utilities are intended for my personal use and aren't built with others in mind. I also have web-based utilities hosted on [my website](https://github.com/mcomella/mcomella.github.com/tree/main/app).
 
 Projects:
 * mwm (macOS window manager): resize windows on macOS via keyboard shortcuts
+* remind: a macOS app that speaks the user provided text randomly during the user provided interval (e.g. remind me to take a deep breath every 3 to 7 minutes). A similar app is also available on the web: https://mcomella.com/app/remind.html. Unlike the web app, the macOS app can be launched on user login and does not announce while the screen is off
 
 ## LICENSE
 MIT License
 
-Copyright (c) 2022 Michael Comella
+Copyright (c) 2023 Michael Comella
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

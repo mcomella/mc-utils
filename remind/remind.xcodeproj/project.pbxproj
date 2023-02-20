@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D734DA4A2992F73A000B6E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734DA492992F73A000B6E78 /* AppDelegate.swift */; };
+		D734DA4E2992F73B000B6E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D734DA4D2992F73B000B6E78 /* Assets.xcassets */; };
+		D734DA512992F73B000B6E78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D734DA4F2992F73B000B6E78 /* Main.storyboard */; };
+		D734DA5C2992F73B000B6E78 /* remindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734DA5B2992F73B000B6E78 /* remindTests.swift */; };
+		D734DA662992F73B000B6E78 /* remindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734DA652992F73B000B6E78 /* remindUITests.swift */; };
+		D734DA682992F73B000B6E78 /* remindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D734DA672992F73B000B6E78 /* remindUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D734DA582992F73B000B6E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D734DA3E2992F73A000B6E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D734DA452992F73A000B6E78;
+			remoteInfo = remind;
+		};
+		D734DA622992F73B000B6E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D734DA3E2992F73A000B6E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D734DA452992F73A000B6E78;
+			remoteInfo = remind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D734DA462992F73A000B6E78 /* remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D734DA492992F73A000B6E78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D734DA4D2992F73B000B6E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D734DA502992F73B000B6E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D734DA522992F73B000B6E78 /* remind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = remind.entitlements; sourceTree = "<group>"; };
+		D734DA572992F73B000B6E78 /* remindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = remindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D734DA5B2992F73B000B6E78 /* remindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remindTests.swift; sourceTree = "<group>"; };
+		D734DA612992F73B000B6E78 /* remindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = remindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D734DA652992F73B000B6E78 /* remindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remindUITests.swift; sourceTree = "<group>"; };
+		D734DA672992F73B000B6E78 /* remindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remindUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D734DA432992F73A000B6E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D734DA542992F73B000B6E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D734DA5E2992F73B000B6E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D734DA3D2992F73A000B6E78 = {
+			isa = PBXGroup;
+			children = (
+				D734DA482992F73A000B6E78 /* remind */,
+				D734DA5A2992F73B000B6E78 /* remindTests */,
+				D734DA642992F73B000B6E78 /* remindUITests */,
+				D734DA472992F73A000B6E78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D734DA472992F73A000B6E78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D734DA462992F73A000B6E78 /* remind.app */,
+				D734DA572992F73B000B6E78 /* remindTests.xctest */,
+				D734DA612992F73B000B6E78 /* remindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D734DA482992F73A000B6E78 /* remind */ = {
+			isa = PBXGroup;
+			children = (
+				D734DA492992F73A000B6E78 /* AppDelegate.swift */,
+				D734DA4D2992F73B000B6E78 /* Assets.xcassets */,
+				D734DA4F2992F73B000B6E78 /* Main.storyboard */,
+				D734DA522992F73B000B6E78 /* remind.entitlements */,
+			);
+			path = remind;
+			sourceTree = "<group>";
+		};
+		D734DA5A2992F73B000B6E78 /* remindTests */ = {
+			isa = PBXGroup;
+			children = (
+				D734DA5B2992F73B000B6E78 /* remindTests.swift */,
+			);
+			path = remindTests;
+			sourceTree = "<group>";
+		};
+		D734DA642992F73B000B6E78 /* remindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D734DA652992F73B000B6E78 /* remindUITests.swift */,
+				D734DA672992F73B000B6E78 /* remindUITestsLaunchTests.swift */,
+			);
+			path = remindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D734DA452992F73A000B6E78 /* remind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D734DA6B2992F73B000B6E78 /* Build configuration list for PBXNativeTarget "remind" */;
+			buildPhases = (
+				D734DA422992F73A000B6E78 /* Sources */,
+				D734DA432992F73A000B6E78 /* Frameworks */,
+				D734DA442992F73A000B6E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = remind;
+			productName = remind;
+			productReference = D734DA462992F73A000B6E78 /* remind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D734DA562992F73B000B6E78 /* remindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D734DA6E2992F73B000B6E78 /* Build configuration list for PBXNativeTarget "remindTests" */;
+			buildPhases = (
+				D734DA532992F73B000B6E78 /* Sources */,
+				D734DA542992F73B000B6E78 /* Frameworks */,
+				D734DA552992F73B000B6E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D734DA592992F73B000B6E78 /* PBXTargetDependency */,
+			);
+			name = remindTests;
+			productName = remindTests;
+			productReference = D734DA572992F73B000B6E78 /* remindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D734DA602992F73B000B6E78 /* remindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D734DA712992F73B000B6E78 /* Build configuration list for PBXNativeTarget "remindUITests" */;
+			buildPhases = (
+				D734DA5D2992F73B000B6E78 /* Sources */,
+				D734DA5E2992F73B000B6E78 /* Frameworks */,
+				D734DA5F2992F73B000B6E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D734DA632992F73B000B6E78 /* PBXTargetDependency */,
+			);
+			name = remindUITests;
+			productName = remindUITests;
+			productReference = D734DA612992F73B000B6E78 /* remindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D734DA3E2992F73A000B6E78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					D734DA452992F73A000B6E78 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					D734DA562992F73B000B6E78 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D734DA452992F73A000B6E78;
+					};
+					D734DA602992F73B000B6E78 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D734DA452992F73A000B6E78;
+					};
+				};
+			};
+			buildConfigurationList = D734DA412992F73A000B6E78 /* Build configuration list for PBXProject "remind" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D734DA3D2992F73A000B6E78;
+			productRefGroup = D734DA472992F73A000B6E78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D734DA452992F73A000B6E78 /* remind */,
+				D734DA562992F73B000B6E78 /* remindTests */,
+				D734DA602992F73B000B6E78 /* remindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D734DA442992F73A000B6E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D734DA4E2992F73B000B6E78 /* Assets.xcassets in Resources */,
+				D734DA512992F73B000B6E78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D734DA552992F73B000B6E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D734DA5F2992F73B000B6E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D734DA422992F73A000B6E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D734DA4A2992F73A000B6E78 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D734DA532992F73B000B6E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D734DA5C2992F73B000B6E78 /* remindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D734DA5D2992F73B000B6E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D734DA662992F73B000B6E78 /* remindUITests.swift in Sources */,
+				D734DA682992F73B000B6E78 /* remindUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D734DA592992F73B000B6E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D734DA452992F73A000B6E78 /* remind */;
+			targetProxy = D734DA582992F73B000B6E78 /* PBXContainerItemProxy */;
+		};
+		D734DA632992F73B000B6E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D734DA452992F73A000B6E78 /* remind */;
+			targetProxy = D734DA622992F73B000B6E78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D734DA4F2992F73B000B6E78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D734DA502992F73B000B6E78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D734DA692992F73B000B6E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D734DA6A2992F73B000B6E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D734DA6C2992F73B000B6E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = remind/remind.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomella.remind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D734DA6D2992F73B000B6E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = remind/remind.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomella.remind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D734DA6F2992F73B000B6E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomella.remindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/remind";
+			};
+			name = Debug;
+		};
+		D734DA702992F73B000B6E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomella.remindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/remind";
+			};
+			name = Release;
+		};
+		D734DA722992F73B000B6E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomella.remindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = remind;
+			};
+			name = Debug;
+		};
+		D734DA732992F73B000B6E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomella.remindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = remind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D734DA412992F73A000B6E78 /* Build configuration list for PBXProject "remind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D734DA692992F73B000B6E78 /* Debug */,
+				D734DA6A2992F73B000B6E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D734DA6B2992F73B000B6E78 /* Build configuration list for PBXNativeTarget "remind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D734DA6C2992F73B000B6E78 /* Debug */,
+				D734DA6D2992F73B000B6E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D734DA6E2992F73B000B6E78 /* Build configuration list for PBXNativeTarget "remindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D734DA6F2992F73B000B6E78 /* Debug */,
+				D734DA702992F73B000B6E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D734DA712992F73B000B6E78 /* Build configuration list for PBXNativeTarget "remindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D734DA722992F73B000B6E78 /* Debug */,
+				D734DA732992F73B000B6E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D734DA3E2992F73A000B6E78 /* Project object */;
+}
