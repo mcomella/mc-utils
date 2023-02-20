@@ -1,7 +1,7 @@
 import OSLog
 import SwiftUI
 
-let log = Logger(subsystem: "xyz.mcomella.mwm", category: "default")
+let log = Logger(subsystem: "com.mcomella.mwm", category: "default")
 
 @main
 struct mwmApp: App {
