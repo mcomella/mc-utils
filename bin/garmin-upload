@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+#
+# Copies unuploaded run files from the connected Garmin Forerunner to a
+# directory for easier upload.
+
+DEVICE_PATH=/Volumes/GARMIN\ \ \ \ 
+RUN_FILE_PATH=$DEVICE_PATH/GARMIN/ACTIVITY
+STATE_PATH=~/.mc-garmin-assistant
+
+# Verify device is connected.
+if [[ ! -d $DEVICE_PATH ]]; then
+    echo "Unable to detect device: is it connected? Exiting."
+    exit 1
+fi
+
+# Verify state file exists.
+if [[ ! -f $STATE_PATH ]]; then
+    echo "Unable to locate state file so unable to select files for upload."
+    echo "    touch $STATE_PATH"
+    echo "and the script will select files newer than that the next time it runs."
+    exit 1
+fi
+
+# Create tmp dir to store copied files.
+TMP=`mktemp -d -t mc-garmin-assistant`
+if [[ ! -d $TMP ]]; then
+    echo "Unable to create temporary directory to store files. Exiting."
+    exit 1
+fi
+
+# Copy files into $TMP and open manual step for convenience.
+if ! find "$RUN_FILE_PATH" -newer $STATE_PATH -exec cp -ai {} $TMP \;; then
+    echo "Failed to copy (all?) run files for an unknown reason."
+else
+    echo "Copied $RUN_FILE_PATH to $TMP ."
+    touch $STATE_PATH # Set modification time of state to now.
+    open https://connect.garmin.com/modern/import-data
+    open $TMP
+fi
+
+# Clean up on user prompt.
+echo "Hit return to clean up: will remove $TMP ."
+read
+rm -rf $TMP
+echo "Removed $TMP ."
