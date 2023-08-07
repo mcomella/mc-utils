@@ -5,7 +5,7 @@
 
 DEVICE_PATH=/Volumes/GARMIN\ \ \ \ 
 RUN_FILE_PATH=$DEVICE_PATH/GARMIN/ACTIVITY
-STATE_PATH=~/.mc-garmin-assistant
+STATE_PATH=~/.mc-garmin-upload
 
 # Verify device is connected.
 if [[ ! -d $DEVICE_PATH ]]; then
@@ -22,7 +22,7 @@ if [[ ! -f $STATE_PATH ]]; then
 fi
 
 # Create tmp dir to store copied files.
-TMP=`mktemp -d -t mc-garmin-assistant`
+TMP=`mktemp -d -t mc-garmin-upload`
 if [[ ! -d $TMP ]]; then
     echo "Unable to create temporary directory to store files. Exiting."
     exit 1
