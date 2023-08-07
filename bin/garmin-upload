@@ -43,3 +43,16 @@ echo "Hit return to clean up: will remove $TMP ."
 read
 rm -rf $TMP
 echo "Removed $TMP ."
+
+while true; do
+    echo -n "Unmount Garmin? (y/n) "
+    read LINE
+    if [[ $LINE == 'y' ]]; then
+        diskutil unmount "$DEVICE_PATH" || echo "Unmount failed."
+        break
+    elif [[ $LINE == 'n' ]]; then
+        break
+    else
+        echo "Unknown input: try again."
+    fi
+done
