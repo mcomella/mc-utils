@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# The script is short and self explanatory.
+
+set -e
+
+chmod -R go+rwX $@
+mv $@ ~/Public/
