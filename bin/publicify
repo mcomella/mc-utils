@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# The script is short and self explanatory.
+# Make the given paths "public": move them to a public directory and make them
+# world readable.
 
 set -e
 
